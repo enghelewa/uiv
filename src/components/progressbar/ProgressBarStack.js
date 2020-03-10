@@ -23,7 +23,7 @@ export default {
           'aria-valuemax': 100
         }
       }),
-      props.label ? (props.labelText ? props.labelText : `${props.value}%`) : null
+      props.label ? (props.labelText ? `<span>${props.labelText}</span>` : `<span>${props.value}%</span>`) : null
     )
   },
   props: {
